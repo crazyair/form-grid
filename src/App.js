@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// import "./App.css";
 
-function App() {
+// function App() {
+//   return <div>111</div>;
+// }
+
+// export default App;
+
+import { Form, Input } from "antd";
+import "antd/dist/antd.less";
+import "./demo.less";
+
+const Demo = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Form labelCol={{ span: 24 }} wrapperCol={{ span: 0 }}>
+      <Form.Item>
+        <Input />
+      </Form.Item>
+    </Form>
   );
-}
+};
 
-export default App;
+export default Demo;
